@@ -65,7 +65,7 @@ html, body, .overall-ppt-container {
 .intro {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
   height: 100%;
   padding: 2vh 2vw;
   line-height: 2;
@@ -145,4 +145,13 @@ html, body, .overall-ppt-container {
 
 .refer-left {
   align-items: flex-start;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
