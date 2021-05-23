@@ -1,0 +1,148 @@
+html, body, .overall-ppt-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Calibri;
+  background: linear-gradient(25deg, #f26467, transparent);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overall-ppt-container {
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-slide {
+  width: 90%;
+  height: 90%;
+  border-radius: 8px;
+  background: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.split-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+}
+
+.split-body {
+  height: calc(100% - 8vh);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe-demo {
+  width: 90%;
+  height: 90%;
+  border: 1px solid #f26467;
+  border-radius: 8px;
+  margin-bottom: 3%;
+}
+
+.split-header h3:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.demo1 {
+  border: none;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 2vh 2vw;
+  line-height: 2;
+  font-size: 1.2em;
+}
+
+.next-slide {
+  right: -40px;
+  position: absolute;
+  transform: rotate(270deg);
+}
+
+.arrows {
+  width: 46px;
+  height: 67px;
+  margin-left: 46px;
+}
+
+.arrows-hide {
+  width: 46px;
+  height: 67px;
+  margin-left: 45%;
+}
+
+.arrows path, .arrows-hide path {
+  stroke: black;
+  fill: transparent;
+  stroke-width: 5px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+.arrows path.a1, .arrows-hide path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2, .arrows-hide path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3, .arrows-hide path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+.arrows:hover, .arrows-hide:hover {
+  cursor: pointer;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+  40% {
+    opacity: 1
+  }
+  80% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+.prev-slide {
+  transform: rotate(90deg);
+  position: absolute;
+  left: -42px;
+}
+
+.refer {
+  justify-content: center;
+  align-items: center;
+}
+
+.refer-left {
+  align-items: flex-start;
+}

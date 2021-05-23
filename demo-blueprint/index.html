@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BluePrint</title>
+  <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  
+  <div class="parent-container">
+    <div class="header-container">
+      <div class="logo align-center" title="Click / Control+Click">
+      </div>
+      <div class="heading align-center" title="Click / Control+Click">
+      </div>
+      <div class="menus"  title="Click / Control+Click">
+        <button class="menu-btn">
+        </button>
+        <button class="menu-btn">
+        </button>
+      </div>
+    </div>
+    <div class="body-container">
+      <div class="left-pane" title="Click / Control+Click">
+        <div class="tool-header align-center">
+        </div><hr>
+        <div class="tool-body align-center">
+          <div class="tool-input align-center">
+            
+          </div>
+        </div>
+      </div>
+      <div id="map" class="right-pane" title="Click / Control+Click">
+        <b>Click</b>&nbsp; to see current element styles & &nbsp;<b>Control + click</b>&nbsp; to see current element's parent container styles
+        <div id="home"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="prop-container">
+    <div class="styles-content">
+      <div class="style-header">
+        <div class="style-heading align-center">
+          <h4 id="styleHeading">Heading</h4>
+        </div>
+        <div class="align-center close-style-content">
+          <i class="fas fa-times "></i>
+        </div>
+      </div><hr>
+      <div class="style-body">
+        <div class="inner-container">
+          <span class="prop">Display:</span>
+          <span class="val">flex</span>
+        </div>
+        <div class="inner-container set-top">
+          <span class="prop">justify-content:</span>
+          <span class="val">center</span>
+        </div>
+        <div class="inner-container set-top">
+          <span class="prop">slex-direction</span>
+          <span class="val">flex</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

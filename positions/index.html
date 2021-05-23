@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positions</title>
+  <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="overall-container">
+    <div class="left-content">
+      <div class="input-container">
+        <div class="input-header">
+          <h4>Positions</h4>
+        </div> <hr>
+        <div class="input-body">
+          <div class="inner-container">
+            <span class="prop">Position</span>
+            <select name="position" id="position" class="dropdown">
+              <option value="absolute">Absolute</option>
+              <option value="relative">relative</option>
+              <option value="sticky">Sticky</option>
+              <option value="static">Static</option>
+              <!-- <option value="fixed">Fixed</option> -->
+            </select>
+          </div>
+          <div class="inner-container set-top">
+            <span class="prop">Top:</span>
+            <input type="number" id="top" placeholder="Enter top..." value="0">
+          </div>
+          <div class="inner-container set-top">
+            <span class="prop">Left:</span>
+            <input type="number" id="left" placeholder="Enter Left..." value="0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="flex-box">
+        <div class="parent-container">
+          <li>
+            <span class="pos-header">Static</span>
+            <p class="pos-def">
+              Every element has a static position by default, so the element will stick to the normal page flow. So if there is a left/right/top/bottom/z-index set then there will be no effect on that element.
+            </p>
+          </li>
+          <li>
+            <span class="pos-header">Relative</span>
+            <p class="pos-def">
+              An element’s original position remains in the flow of the document, just like the <code>static</code> value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction.
+            </p>
+          </li>
+          <li>
+            <span class="pos-header">Absolute</span>
+            <p class="pos-def">
+              An element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction.
+            </p>
+          </li>
+          <div class="child-container">
+            <h3>Child Element</h3>
+          </div>
+          <li>
+            <span class="pos-header">Fixed</span>
+            <p class="pos-def">
+              The element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same, only fixed positioned elements are always relative to the document, not any particular parent, and are unaffected by scrolling.
+            </p>
+          </li>
+          <li>
+            <span class="pos-header">Sticky</span>
+            <p class="pos-def">
+              The element is treated like a relative value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a fixed position where it is told to stick.
+            </p>
+          </li>
+          <li>
+            <span class="pos-header">Inherit</span>
+            <p class="pos-def">
+              The position value doesn’t cascade, so this can be used to specifically force it to, and inherit the positioning value from its parent.
+            </p>
+          </li>
+          <div class="duplicate-content">
+            <li>
+              <span class="pos-header">Static(duplicate)</span>
+              <p class="pos-def">
+                Every element has a static position by default, so the element will stick to the normal page flow. So if there is a left/right/top/bottom/z-index set then there will be no effect on that element.
+              </p>
+            </li>
+            <li>
+              <span class="pos-header">Relative(duplicate)</span>
+              <p class="pos-def">
+                An element’s original position remains in the flow of the document, just like the <code>static</code> value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction.
+              </p>
+            </li>
+            <li>
+              <span class="pos-header">Absolute(duplicate)</span>
+              <p class="pos-def">
+                An element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction.
+              </p>
+            </li>
+            <li>
+              <span class="pos-header">Fixed(duplicate)</span>
+              <p class="pos-def">
+                The element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same, only fixed positioned elements are always relative to the document, not any particular parent, and are unaffected by scrolling.
+              </p>
+            </li>
+            <li>
+              <span class="pos-header">Sticky(duplicate)</span>
+              <p class="pos-def">
+                The element is treated like a relative value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a fixed position where it is told to stick.
+              </p>
+            </li>
+            <li>
+              <span class="pos-header">Inherit(duplicate)</span>
+              <p class="pos-def">
+                The position value doesn’t cascade, so this can be used to specifically force it to, and inherit the positioning value from its parent.
+              </p>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

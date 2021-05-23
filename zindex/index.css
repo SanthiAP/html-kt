@@ -1,0 +1,126 @@
+.overall-container, html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+}
+
+.overall-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.abs-container, .nor-container{
+  width: 48%;
+  height: 92%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.radio-container {
+  width: 50%;
+  height: 16vh;
+  background: #f26467;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.abs-main-container {
+  width: 90%;
+  height: 50%;
+  background: white;
+  border-radius: 8px;
+}
+
+.nor-main-container {
+  width: 90%;
+  height: 72%;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abs-elem-a {
+  position: absolute;
+  width: 15vw;
+  height: 20vh;
+  background: #727072;
+  left: 12%;
+  bottom: 32%;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abs-elem-b {
+  position: absolute;
+  width: 15vw;
+  height: 20vh;
+  background: rgb(242 100 103);
+  left: 22%;
+  bottom: 22%;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nor-elem-a {
+  position: relative;
+  top: 0;
+  width: 48vw;
+  height: 68%;
+  background: rgb(242 100 103);
+  left: 12%;
+  bottom: 22%;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.nor-elem-b {
+  width: 90%;
+  height: 60%;
+  background: #a7a7a7;
+  border-radius: 8px;
+  display: flex;
+  padding-left: 8px;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.nor-elem-c {
+  width: 24vw;
+  margin-right: 5vw;
+  height: 84%;
+  background: #727072;
+  border-radius: 8px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 3;
+}

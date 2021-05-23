@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-index</title>
+  <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="overall-container">
+    <div class="abs-container">
+      <div class="radio-container">
+        <div>
+          <input type="radio" id="a-front" name="zind-abs-option" value="a" checked>
+          <label for="parent-front">Bring ElementA Top</label><br>
+        </div>
+        <div>
+          <input type="radio" id="b-front" name="zind-abs-option" value="b">
+          <label for="child-front">Bring ElementB Top</label><br>
+        </div>
+      </div>
+      <div class="abs-main-container">
+        <div class="abs-elem-a">
+          ElementA<br>position: absolute<br>Z-index: 0
+        </div>
+        <div class="abs-elem-b">
+          ElementB<br>position: absolute<br>Z-index: 1
+        </div>
+      </div>
+    </div>
+    <div class="nor-container">
+      <div class="nor-main-container">
+        <div class="nor-elem-a">
+          Parent A<br>position: relative<br>Z-index: 2
+          <div class="nor-elem-b">
+            Child<br>Z-index: 99<br>(It's like 2.99, <br>So ParentB will be<br> on top of all elements)
+          </div>
+        </div>
+        <div class="nor-elem-c">
+          ParentB<br>position: relative<br>Z-index: 3
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

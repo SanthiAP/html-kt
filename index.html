@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basics</title>
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div class="next-slide">
+    <svg class="arrows rotate" viewBox="0 0 150 200">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+  </div>
+  <div class="prev-slide">
+    <svg class="arrows rotate" viewBox="0 0 150 200">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+  </div>
+  <div class="overall-ppt-container">
+    <div class="single-slide">
+      <div class="split-header">
+        <h3>HTML Basics</h3>
+      </div>
+      <div class="split-body">
+        <div class="intro">
+          
+        <li>
+          <span>Split complex page into small simple containers</span>
+        </li>
+        <li>
+          <span>Use appropriate positions to place an element.</span>
+        </li>
+        <li>
+          <span>Use alt property in image tag (if image fails to load text will be visible instead image)</span>
+        </li>
+        <li>
+          <span>Prefer % or vh(View Height) or vw(View Width) unit to set height and width</span>
+        </li>
+        <li>
+          <span>Always try to use SVG images or i tags(font awesome, ...) instead PNG, jPEG (JPEG, PNG images will render the page slowly)</span>
+        </li>
+        <li>
+          <span>Avoid inline styles. eg:</span>
+          <code><b>&lt;div style="background: red;"&gt;</b></code>
+        </li>
+        <li>
+          <span>Try to set all css properties in class. Multiple classes can be used like
+            <code><b>&lt;div class="class1 class2"&gt;&lt;/div&gt;</b></code>
+          </span>
+        </li>
+        <li>
+          <span>Inline styles will overwrite class styles, 
+            <code><b>class2</b></code> will overwrite 
+            <code><b>class1</b></code>'s property</span>
+        </li>
+        <li>
+          <span>Try to set same font-family & font-size for entire project</span>
+        </li>
+        <li>
+          <span>Set uniform button height & width for entire project</span>
+        </li>
+        <li>
+          <span>Follow your application theme to pick button / font color</span>
+        </li>
+      </div>
+      </div>
+    </div>
+    <div class="single-slide hidden">
+      <div class="split-header">
+        <h3 id="demoApp">Split web page into different containers</h3>
+      </div>
+      <div class="split-body">
+        <iframe class="iframe-demo" src="demo/index.html" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="single-slide hidden">
+      <div class="split-header">
+        <h3 id="bluePrintApp">BluePrint</h3>
+      </div>
+      <div class="split-body">
+        <iframe class="iframe-demo demo1" src="demo-blueprint/index.html" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="single-slide hidden">
+      <div class="split-header">
+        <h3 id="flexApp">Flex Properties</h3>
+      </div>
+      <div class="split-body">
+        <iframe class="iframe-demo" src="flex/index.html" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="single-slide hidden">
+      <div class="split-header">
+        <h3 id="positionApp">Positions</h3>
+      </div>
+      <div class="split-body">
+        <iframe class="iframe-demo" src="positions/index.html" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="single-slide hidden">
+      <div class="split-header">
+        <h3 id="zindApp">Z-index</h3>
+      </div>
+      <div class="split-body">
+        <iframe class="iframe-demo" src="zindex/index.html" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="single-slide hidden">
+      <div class="split-header">
+        <h3>Reference</h3>
+      </div>
+      <div class="split-body">
+        <div class="intro refer">
+          <div class="ref-left">
+            <li>
+              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Display</a>
+            </li>
+            <li>
+              <a href="https://css-tricks.com/almanac/properties/p/position/" target="_blank">Position</a>
+            </li>
+            <li>
+              <a href="https://css-tricks.com/almanac/properties/z/z-index/" target="_blank">z-index</a>
+            </li>
+            <li>
+              <a href="https://css-tricks.com/almanac/properties/b/box-shadow/" target="_blank">Box Shadow</a>
+            </li>
+            <li>
+              <a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank">Animation</a>
+            </li>
+            <li>
+              <a href="https://css-tricks.com/almanac/properties/f/font-style/" target="_blank">Font Styles</a>
+            </li>
+          </div>
+          <h1>Thank You &#128522;	</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

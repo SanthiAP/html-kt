@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="overall-container">
+    <div class="left-content">
+      <div class="input-container">
+        <div class="input-header">
+          <h4>Flex Properties</h4>
+        </div> <hr>
+        <div class="input-body">
+          <div class="inner-container">
+            <span class="prop">Display:</span>
+            <input type="text" value="Flex" disabled>
+          </div>
+          <div class="inner-container">
+            <span class="prop">Align Items:</span>
+            <input type="text" value="Center" disabled>
+          </div>
+          <div class="inner-container set-top">
+            <span class="prop">Flex Direction:</span>
+            <select name="flexDirection" id="flexDirection" class="dropdown">
+              <option value="row">Row</option>
+              <option value="column">Column</option>
+              <option value="row-reverse">Row Reverse</option>
+              <option value="column-reverse">Column Reverse</option>
+            </select>
+          </div>
+          <div class="inner-container set-top">
+            <span class="prop">Justify Content:</span>
+            <select name="justifyContent" id="justifyContent" class="dropdown">
+              <option value="center">Center</option>
+              <option value="flex-end">End</option>
+              <option value="flex-start">Start</option>
+              <option value="space-around">Space Around</option>
+              <option value="space-evenly">Space Evenly</option>
+              <option value="space-between">Space Between</option>
+            </select>
+          </div>
+          <div class="inner-container set-top">
+            <span class="prop">Item:</span>
+            <div class="btn-container">
+              <button id="addItem" class="flex-btn" title="Add Item">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button id="removeItem" class="flex-btn" title="Remove Item">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="flex-box">
+        <div class="box">Box1</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

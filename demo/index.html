@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Application</title>
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.36/esri/css/esri.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://js.arcgis.com/3.36/"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="parent-container">
+    <div class="header-container">
+      <div class="logo align-center">
+        <img src="images/favicon.png" alt="Logo">
+      </div>
+      <div class="heading align-center">
+        <h3>Page Heading</h3>
+      </div>
+      <div class="menus">
+        <button class="menu-btn">
+          <i class="fas fa-cog"></i>
+          <span>Menu1</span>
+        </button>
+        <button class="menu-btn">
+          <i class="fas fa-cog"></i>
+          <span>Menu2</span>
+        </button>
+      </div>
+    </div>
+    <div class="body-container">
+      <div class="left-pane">
+        <div class="tool-header align-center">
+          <h4>Tool Header</h4>
+        </div><hr>
+        <div class="tool-body align-center">
+          <div class="tool-input align-center">
+            <span>State:</span>
+            <select name="state" id="state">
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="map" class="right-pane">
+        <div id="home"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

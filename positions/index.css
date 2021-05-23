@@ -1,0 +1,182 @@
+html, body, .overall-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+}
+
+.overall-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  align-items: center;
+}
+
+.right-content {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  height: 50%;
+  width: 80%;
+  background: #f26467;
+  border-radius: 8px;
+}
+
+.input-header {
+  height: 6vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 0;
+  width: 90%;
+}
+
+.input-body {
+  height: calc(100% - 6vh - 1em);
+  width: calc(100% - 2vw);
+  padding: 0 1vw;
+}
+
+.inner-container {
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+.set-top {
+  margin-top: 0.5em;
+}
+
+.flex-box {
+  width: 94%;
+  height: 70%;
+  background: #a7a7a7;
+  border-radius: 8px;
+  display: flex;
+  padding: 2vh 1vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.prop {
+  width: 50%;
+}
+
+#flexDirection,  #justifyContent{
+  width: 50%;
+  outline: none;
+  border: none;
+}
+
+.select2-container {
+  width: 50% !important;
+}
+
+input:disabled {
+  background: transparent;
+  line-height: 22px;
+  width: 50%;
+  border: transparent;
+  color: white;
+  margin-bottom: 0.25em;
+}
+
+.flex-btn {
+  outline: none;
+  width: 45%;
+  padding: 6px 0;
+  border: none;
+  border-radius: 4px;
+  background: #a7a7a7;
+  color: white;
+  cursor: pointer;
+}
+
+.flex-btn:hover {
+  background: #727072;
+}
+
+.btn-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.select2-container--default .select2-selection--single {
+  border: none;
+}
+
+.inner-container input {
+  width: 49%;
+  height: 28px;
+  outline: none;
+  border: none;
+  border-radius: 4px;;
+}
+
+.parent-container {
+  width: 95%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  color: white;
+  padding: 1vh 1vw;
+  overflow: auto;
+}
+
+.child-container {
+  width: 100%;
+  height: 12vh;
+  background: #f26467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pos-header {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.pos-def {
+  line-height: 1.5;
+  margin: 1vh 1vw;
+}
+
+.duplicate-content {
+  display: none;
+}
